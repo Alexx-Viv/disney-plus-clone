@@ -6,28 +6,28 @@ function Header() {
     <Nav>
       <Logo src='./images/logo.svg' />
       <NavMenu>
-        <a>
-          <img src='./images/home-icon.svg' />
+        <a href='www.wikipedia.com'>
+          <img src='./images/home-icon.svg' alt='home' />
           <span>HOME</span>
         </a>
-        <a>
-          <img src='./images/search-icon.svg' />
+        <a href='www.wikipedia.com'>
+          <img src='./images/search-icon.svg' alt='search' />
           <span>SEARCH</span>
         </a>
-        <a>
-          <img src='./images/watchlist-icon.svg' />
+        <a href='www.wikipedia.com'>
+          <img src='./images/watchlist-icon.svg' alt='watchlist' />
           <span>WATCHLIST</span>
         </a>
-        <a>
-          <img src='./images/original-icon.svg' />
+        <a href='www.wikipedia.com'>
+          <img src='./images/original-icon.svg' alt='originals' />
           <span>ORIGINALS</span>
         </a>
-        <a>
-          <img src='./images/movie-icon.svg' />
+        <a href='www.wikipedia.com'>
+          <img src='./images/movie-icon.svg' alt='movies' />
           <span>MOVIES</span>
         </a>
-        <a>
-          <img src='./images/series-icon.svg' />
+        <a href='www.wikipedia.com'>
+          <img src='./images/series-icon.svg' alt='series' />
           <span>SERIES</span>
         </a>
       </NavMenu>
@@ -44,7 +44,7 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   padding: 0 36px;
-  overflow: hidden;
+  overflow-x: hidden;
 `
 const Logo = styled.img`
   width: 80px;
@@ -54,6 +54,8 @@ const NavMenu = styled.div`
   flex: 1;
   margin-left: 20px;
   a {
+    text-decoration: none;
+    color: white;
     display: flex;
     align-items: center;
     padding: 0 12px;
